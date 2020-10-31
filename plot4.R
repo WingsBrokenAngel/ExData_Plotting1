@@ -7,7 +7,7 @@ data3 <- na.omit(data2)
 data3$DateTime <- as.POSIXct(paste(data3$Date, data3$Time))
 
 
-par(mfcol = c(2, 2), mar = c(4, 4, 0, 0), oma = c(0, 0, 2, 0))
+par(mfcol = c(2, 2), mar = c(5, 4, 0, 0), oma = c(0, 0, 2, 0))
 
 plot(data3$DateTime, data3$Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "l")
 
